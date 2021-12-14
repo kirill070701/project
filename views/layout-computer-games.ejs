@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/logotip.css">
+    <link rel="stylesheet" type="text/css" href="/css/shrifts.css">
+    <link rel="stylesheet" type="text/css" href=" /css/layour/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/layour/basis.css">
+    <link rel="stylesheet" type="text/css" href="/css/layour/basis-mobile.css">
+    <link rel="stylesheet" type="text/css" href="/css/layour/menu_mobil.css">
+    <link rel="stylesheet" type="text/css" href=" /css/layour/links.css">
+    <link rel="stylesheet" type="text/css" href="/css/layour/share.css">
+    <link rel="stylesheet" type="text/css" href="/css/basement.css">
+    <link rel="stylesheet" type="text/css" href="/css/razdel-mobil.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <script type="text/javascript" src="https://vk.com/js/api/share.js?95" charset="windows-1251"></script>
+    
+    <meta http-equiv="Last-Modified" content="<%=results[0].pictureWriting%>">
+    <meta name="author" content="Kirill Andreev">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://stormgames/computer-games/<%=results[0].title%>">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="<%=results[0].metaDescription%>" /> <!--добавит описание страницы-->
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="<%=results[0].metaKeywords%>">
+    
+    <link rel="shortcut icon" href="/foto/favicon3.png" type="image/png">
+    <title><%= results[0].title%></title>
+</head>
+<body>
+    <%- include('head2'); -%>
+    <script src="/socket.io/socket.io.js"></script>
+    <div class="indent_under_header"></div>
+    <%- include('menu_mobil'); -%>
+    <div class="back"></div> <!--шаг назад-->
+    <div class="basis">
+        <div class="rollback">
+            <a href="/" class="home">Главная</a>
+            <svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="7" height="15" class="svg">
+                <line x1="1" y1="15" x2="6" y2="0" stroke="rgb(145, 145, 145)" stroke-width="1" />
+            </svg>
+            <a href="/computer-games/" class="home"><%= name%></a>
+        </div>
+        <div class="news">
+            <div class="name"><h1 class= "nameh2"><%= results[0].title%></h1></div>
+            <img src="data:image/gif;base64,<%=results[0].picture%>" class="img" alt="Изображение статьи"/>
+            <div class="dscription"><%- results[0].mainText%></div>
+            <div class="strip">
+                <div class="share">
+                    <p class="p1">Поделиться:</p>
+                    <div class="share-btns">
+                        <a
+                            class="facebook"
+                            rel="nofollow"
+                            href="javascript: void(0)"
+                            onClick="window.open('https://www.facebook.com/sharer.php?u=<%= reference%>','sharer','status=0,toolbar=0,width=650,height=500');"
+                            title="Поделиться в Facebook">
+                            <img src="/foto/share-btns1.png" class="btns" alt="facebook">
+                        </a>
+                        <a
+                            class="vkontakte"
+                            rel="nofollow"
+                            href="javascript: void(0)"
+                            onClick="window.open('https://vkontakte.ru/share.php?url=<%= reference%>','sharer','status=0,toolbar=0,width=650,height=500');"
+                            title="Поделиться ВКонтакте">
+                            <img src="/foto/share-btns3.png" class="btns" alt="VK">
+                        </a>
+                        <a
+                            class="telegram"
+                            rel="nofollow"
+                            href="javascript: void(0)"
+                            onClick="window.open('https://telegram.me/share/url?url=<%= reference%>','sharer','status=0,toolbar=0,width=650,height=500');"
+                            title="Поделиться в Телеграм">
+                            <img src="/foto/share-btns4.png" class="btns" alt="telegram">
+                        </a>
+                        <a
+                            class="twitter"
+                            rel="nofollow"
+                            href="javascript: void(0)"
+                            onClick="window.open('https://twitter.com/intent/tweet?text=<%= reference%>','sharer','status=0,toolbar=0,width=650,height=500');"
+                            title="Твитнуть">
+                            <img src="/foto/share-btns2.png" class="btns" alt="twitter">
+                        </a>
+                       <a
+                            class="mail"
+                            rel="nofollow"
+                            href="javascript: void(0)"
+                            onClick="window.open('https://connect.mail.ru/share?url=<%= reference%>','sharer','status=0,toolbar=0,width=650,height=500');"
+                            title="Поделиться в @Мой мир">
+                            <img src="/foto/share-btns5.png" class="btns" alt="mail">
+                        </a>
+                    </div>
+                    
+                </div>
+                <div class="publication">
+                    <p class="timePublication"><%= results[0].timePublication%></p>
+                </div>
+            </div>
+
+        </div>
+        <div class="also">
+            <div class="alsoElem"><h2 class="alsoh2">А так же:</h2></div>
+            
+            <div class="elements">
+
+                <div class="elem">
+                    <form action="" method="get" name="form">
+                        <input type="submit" class="transparent" value=" ">
+                        <div class="backgroundName"></div> 
+                        <img id="imgElem" alt="Изображение статьи"/>
+                        <div class="name1">
+                            <a id="nameElem" ></a>
+                        </div>
+                    </form>
+                </div>
+                <div class="elem1">
+                    <form action="" method="get" name="form1">
+                        <input type="submit" class="transparent" value=" ">
+                        <div class="backgroundName"></div>
+                        <img id="imgElem1" alt="Изображение статьи"/>
+                        <div class="name1">
+                            <a id="nameElem1" align="justify"></a>
+                        </div>
+                    </form>
+                </div>
+                
+                <div class="elem2">
+                    <form action="" method="get" name="form2">
+                        <input type="submit" class="transparent" value=" ">
+                        <div class="backgroundName"></div>
+                        <img id="imgElem2" alt="Изображение статьи"/>
+                        <div class="name1">
+                            <a id="nameElem2" align="justify"></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+    <%- include('basement'); -%> 
+<script>
+    var socket = io();
+
+socket.on('computer-games', function(msg) {
+    console.log(msg)
+    nameElem.setAttribute('src', "/")
+    document.form.action = msg[0].id 
+    imgElem.setAttribute('src', "data:image/jpg;base64," + `${msg[0].image}`);
+    document.getElementById("nameElem").innerHTML = msg[0].name
+    document.form1.action = msg[1].id 
+    imgElem1.setAttribute('src', "data:image/jpg;base64," + `${msg[1].image}`);
+    document.getElementById("nameElem1").innerHTML = msg[1].name
+    document.form2.action = msg[2].id 
+    imgElem2.setAttribute('src', "data:image/jpg;base64," + `${msg[2].image}`);
+    document.getElementById("nameElem2").innerHTML = msg[2].name
+});
+</script>
+<script src="/js/menu_mobil.js"></script>
+<script src="/js/basis.js"></script>
+
+</body>
+</html> 

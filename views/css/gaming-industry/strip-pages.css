@@ -1,0 +1,53 @@
+.strip-pages{
+    position:relative;
+    overflow: hidden;
+}
+.page{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.block-page{
+    position: relative;
+    margin-top: 1.5vh;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    width: 60vw;
+    height: 6.5vh;
+    background: #202020;
+    border-radius: 1vh;
+    box-shadow: 0 0 5px 4px;
+    /*clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);*/
+}
+.block-page:hover, .nazad:hover{
+    background: #1a1919;
+    color: red;
+}
+
+.span{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    top: 50%;
+    left: 50%;
+    font-size: 2vw;
+    font-family:discription;
+    color:white;
+}
+
+.nazad{
+    position: relative;
+    margin-top: 1.5vh;
+    z-index: 1;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    width: 30vw;
+    height: 6.5vh;
+    background: #202020;
+    border-radius: 1vh;
+    box-shadow: 0 0 5px 2px;
+}

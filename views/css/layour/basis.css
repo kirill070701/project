@@ -1,0 +1,225 @@
+.basis{
+    position: relative;
+    overflow: hidden;
+    background: rgb(27, 27, 27);
+    width: 70%;
+    transform: translate(-50%, 0%);
+    left: 50%;
+    margin-top: 4vh;
+    padding-bottom: 50px;
+    margin-top: 300px;
+    border-radius: 15px;
+}
+
+.news{
+    position: relative;
+    background: rgb(49, 49, 49);
+    width: 90%;
+    margin-top: 2.5vh;
+    margin-bottom: 3vh;
+    left: 5%;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.img{
+    position: relative;
+    width: 98%;
+    left: 1%;
+    margin-top: 1vh;
+}
+.dscription{
+    position: relative;
+    padding: 2vw;
+    padding-bottom: 1vw;
+    color: white;
+    font-size: 1.8em;
+    font-family: dscription;
+}
+.name{
+    position: relative;
+    font-size: 1.5em;
+    font-family: name;
+    padding: 0.5vw;
+    padding-left: 2vw;
+    margin: 0px;
+    color: white;
+}
+.nameh2{
+    padding: 0px;
+    margin: 0px;
+}
+.p{
+    padding: 0px;
+    margin: 0px;
+}
+
+.strip{
+    margin: 0px;
+    padding: 0px;
+    padding-bottom: 0.8vw;
+    position:relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.share{
+    position: relative;
+    padding-left: 2vw;
+    overflow: hidden;
+    float: left;
+}
+
+.publication{
+    position: relative;
+    padding-right: 2vw;
+    overflow: hidden;
+    width:45%;
+    float:right
+}
+
+.p1{
+    position: relative;
+    float: left;
+    color: #6d6d6d;
+    font-size: 2.5vh;
+    font-family: dscription;
+    margin: 0.8vh;
+    margin-left: 0px;
+}
+.timePublication{
+    position: relative;
+    float: right;
+    color: #6d6d6d;
+    font-size: 2.5vh;
+    font-family: dscription;
+    margin: 0.8vh;
+    margin-left: 0px;
+}
+
+.also{
+    position: relative;
+    background: rgb(49, 49, 49);
+    width: 90%;
+    left: 5%;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+.alsoElem{
+    position: relative;
+    padding: 0px;
+    margin: 0px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    
+}
+
+.alsoh2{
+    position: relative;
+    font-family: dscription;
+    color: white;
+    font-size: 3vh;
+    margin: 0.8vw;
+}
+.elements{
+    position: relative;
+    overflow: hidden;
+    width: calc(100% - 4vw);
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#imgElem, #imgElem1, #imgElem2 {
+    position: relative;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 0px;
+}
+
+.name1{
+    position: relative;
+    color: white;
+    margin: 0px;
+    padding-top: 0.5vh;
+    padding-left: 0.5vw;
+    font-size: 1.5vw;
+    font-family: dscription;
+}
+
+.elem, .elem1, .elem2{
+    position: relative;
+    width: 32.5%;
+    overflow: hidden;
+
+}
+.elem{
+    float: left;
+}
+.elem1{
+    transform: translate(-50%, 0%);
+    left: 17.5%;
+    float: left;
+}
+.elem2{
+    float: right;
+}
+.nameElem, .nameElem1, .nameElem2{
+    position: relative;
+}
+
+.transparent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0px solid #fff;
+    opacity: 0;
+    margin: 0;
+    padding: 0;
+    z-index: 5;
+}
+.transparent:hover{
+    opacity: 0.3;
+}
+
+.svg{
+    position: relative;
+    top: 1.5px
+  }
+  
+  .home{
+    position:relative;
+    height: 18px;
+    font-size: 18px;
+    color: rgb(122, 122, 122);
+    text-decoration: none;
+  }
+
+  .home:hover{
+    color: white;
+  }
+  
+  .rollback{
+    position:relative;
+    padding-top: 15px;
+    padding-left: 6.5vw;
+
+  }
+
+  .enumeration{
+    font-size: 0.8em;
+    
+}
+.enumeration li{
+    margin-bottom: -5px;
+}
+
+.selected{
+    position: relative;
+    /*width: 100%;*/
+    background-color: #585858;
+}
+
+.p a{
+    color: rgb(0, 0, 0)
+}

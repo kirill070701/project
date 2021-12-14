@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/razdely.css">
+    <link rel="stylesheet" type="text/css" href="/css/logotip.css">
+    <link rel="stylesheet" type="text/css" href="/css/fon-dly-razdelov-mobil.css">
+    <link rel="stylesheet" type="text/css" href="/css/razdel-mobil.css">
+    <link rel="stylesheet" type="text/css" href="/css/shrifts.css">
+    <link rel="stylesheet" type="text/css" href="/css/section.css">
+    <link rel="stylesheet" type="text/css" href="/css/style-mabil.css">
+    <link rel="stylesheet" type="text/css" href="/css/section-mobil.css">
+    <link rel="stylesheet" type="text/css" href="/css/basement.css">
+    <link rel="stylesheet" type="text/css" href="/css/layour/basis-mobile.css">
+    <link rel="stylesheet" type="text/css" href="/css/layour/menu_mobil.css">
+
+    <meta http-equiv="Last-Modified" content="Sut, 8 Aug 2021 12:31:28 GMT">
+    <meta name="author" content="Kirill Andreev">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://stormgames">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Свежие и последние новости из мира компьютерных игр, игровой индустрии, киберспорта и компьютеных технологий. Топы игр, аналитика, релизы, патчи, гайди, моды, читы, VR, PC, PS, PS2, PS3, PS4, PS5" /> 
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="игры, компьютерные  игры, киберспорт, cybersport, турниры, игровая индустрия, анонсы, компьютерные технологии, видеокарта, процессор, оперативная память, искуственный интелект, гаджетотека">
+
+
+    <link rel="shortcut icon" href="/foto/favicon3.png" type="image/png">
+    <title>StormGames</title>
+</head>
+<body>
+    <%- include('head'); -%> 
+    <%- include('menu_mobil'); -%>
+    <div class="foto">
+        <img class="fon" src="foto/fon.jpg" alt="Фон">
+        <div class="text-wrapper">
+            
+            <div class="animated-words">
+                <span></span>
+                <span>Новости игровой индустрии</span>
+                <span>События в мире киберспорта</span>
+                <span>Новинки компьютерных игр</span>
+                <span>Новейшие разработки компьютерной инженерии</span>
+                
+            </div> 
+            <div class="mobil"></div> 
+        </div>
+    </div>
+    <div class="tworazdel">
+        <div class="onecolumn">
+            <div class="temaone">
+                <div class="description">
+                    <h2 class="partition_name" id="partitOne">&emsp;Игровая индустрия</h2>
+                    <p class="partition_name" id="descriptOne" align="justify"></p>
+                </div>
+            </div>
+            <div class="tematwo">
+                <div class="description">
+                    <h2 class="partition_name" id="partitTwo">&emsp;Cybersport</h2>
+                    <p class="partition_name" id="descriptTwo" align="justify"> </p>
+                </div>
+            </div>
+            <div class="temathree">
+                <div class="description">
+                    <h2 class="partition_name" id="partitThree">&emsp;Компьютерные игры</h2>
+                    <p class="partition_name" id="descriptThree" align="justify"></p>
+                </div>
+            </div>
+        </div>
+        <div class="twocolumn">
+            <div class="temafour">
+                <div class="description">
+                    <h2 class="partition_name" id="partitFour">&emsp;Компьютерные технологии</h2>
+                    <p class="partition_name" id="descriptFour" align="justify"></p>
+                    <p class="partition_name" id="descriptFourt" align="justify"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="a">
+        <div class="right_strip">
+            <div class="strip"></div>
+            <div class="otstup"></div>
+            <div class="ferst_selection">
+                <form action="/gaming-industry/" method="GET" class="animated_button">
+                    <input type="submit" class="input1" value="Игровая индустрия">
+                </form>
+                <img class="fon2" src="foto/fon1.jpg" alt="игровая индустрия">
+            </div>
+            <div class="otstup"></div>
+            <div class="otstup"></div>
+            <div class="second_selection">
+                <form action="/cybersport" method="get" class="animated_button2">
+                    <input type="submit" class="input2" value="Cybersport">
+                </form>
+                <img src="foto/scale_1200.jpg" class="fon2" alt="Cybersport">
+            </div>
+        </div>
+        <div class="transition_strip"></div>
+            <div class="left_strip">
+                <div class="strip1"></div>
+                <div class="otstup"></div>
+                <div class="otstup"></div>
+                <div class="third_selection">
+                    <form action="/computer-games" method="get" class="animated_button3">
+                        <!--<input type="submit" class="input3" value="Компьютерные игры">-->
+                        <button type="submit" class="input4">Компьютерные <br /> игры</button>
+                    </form>
+                    <img class="fon2" src="foto/Jump-Ahead.jpg" alt="Компьютерные игры">
+                </div>
+                <div class="otstup"></div>
+                <div class="otstup"></div>
+                <div class="fourth_selection">
+                    <form action="/electronic-enginnering" method="get" class="animated_button4">
+                        <!--<input type="submit" value="Компьютерные технологии" class="input4">-->
+                        <button type="submit" class="input4">Компьютерные <br /> технологии</button>
+                    </form>
+                    <img class="fon2" src="foto/comp.jpg" alt="Компьютерные технологии">
+                </div>
+            </div>
+    </div>
+
+    
+    <div class="otstup2">
+        
+    </div>
+    
+    <%- include('basement'); -%> 
+    
+        
+
+    <script src="js/animate2.js"></script>
+    <script src="js/descriptionSection/descriptionSections.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/menu_mobil.js"></script>
+</body>
+</html>

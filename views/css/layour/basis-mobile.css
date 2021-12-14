@@ -1,0 +1,151 @@
+@media screen and (max-width: 600px) {
+    .basis{
+        position: relative;
+        overflow: hidden;
+        background: rgb(27, 27, 27);
+        width: 95%;
+        transform: translate(-50%, 0%);
+        left: 50%;
+    }
+    .news{
+        position: relative;
+        background: rgb(49, 49, 49);
+        width: 90%;
+        margin-top: 2vh;
+        margin-bottom: 3vh;
+        left: 5%;
+    }
+    .name{
+        position: relative;
+        font-size: 1.2em;
+        font-family: name;
+        padding: 0.5vw;
+        padding-top: 2vw;
+        padding-left: 2vw;
+        margin: 0px;
+        color: white;
+    }
+    .dscription{
+        font-size: 5vw;
+    }
+    .share{
+        position: relative;
+        padding-left: 2vw;
+        overflow: hidden;
+        float:none
+    }
+    .publication{
+        position: relative;
+        overflow: hidden;
+        float: right
+
+    }
+    .p1{
+        position: relative;
+        color: #6d6d6d;
+        font-size: 2.5vh;
+        font-family: dscription;
+        margin: 0.8vh;
+        margin-left: 0px;
+    }
+    .timePublication{
+        position: relative;
+        color: #6d6d6d;
+        font-size: 2vh;
+        font-family: dscription;
+        margin: 0.8vh;
+        margin-left: 0px;
+    }
+    .also{
+        position: relative;
+        background: rgb(49, 49, 49);
+        width: 90%;
+        left: 5%;
+        overflow: hidden;
+    }
+    .alsoElem{
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+    }
+    .alsoh2{
+        position: relative;
+        font-family: dscription;
+        color: white;
+        font-size: 3vh;
+        margin: 0.8vw;
+    }
+  
+    .elem, .elem1, .elem2{
+        transform: translate(0%, 0%);
+        left: 0%;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        float: none;
+        display: inline-block;
+
+
+    }
+    #imgElem, #imgElem1, #imgElem2 {
+        transform: translate(-50%, 0%);
+        z-index: 0;
+        left: 50%;
+        width: 90%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .alsoElem{
+        position: relative;
+        padding: 0px;
+        margin: 0px;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        
+    }
+    .alsoh2{
+        position: relative;
+        font-family: dscription;
+        color: white;
+        font-size: 2.5vh;
+        margin: 0.8vw;
+    }
+
+    .name1{
+        position: absolute;
+        color: white;
+        margin-top: -1.5vw;
+        font-size: 2vh;
+        font-family: dscription;
+        z-index: 1;
+        padding: 0vh 0vh 0.5vh 7vw;
+        transform: translate(0%, -100%);
+        top: 100%;
+        width: 90%;
+    }
+    #nameElem, #nameElem1, #nameElem2{
+        position: relative;
+    }
+   .backgroundName{
+        transform: translate(-50%, 0%);
+        left: 50%;
+        position: absolute;
+        z-index: 1;
+        height: 100%;
+        background: linear-gradient(to top, #000000 0%, #fff0 76%);
+        transform: translate(-50%, 0%);
+        left: 50%;
+        width: 90%;
+        margin: 0px;
+        padding: 0px;
+    }
+    .svg{
+        position: relative;
+        top: 7px
+      }
+    /*#rightcol{
+        top: -10px
+    }*/
+}

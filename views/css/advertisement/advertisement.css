@@ -1,0 +1,181 @@
+.introduction{
+    position: relative;
+    background-color: rgb(230, 168, 0);
+    width: 100%;
+    height: 30vw;
+    top: -10px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+.beginning{
+    position: relative;
+    overflow: hidden;
+    width: 48%;
+    z-index: 2;
+    color: white;
+    display: column;
+    margin: 0;
+    padding: 0;
+}
+
+.beginning h1{
+    font-size: 35px;
+    font-family: EchoesSlabBlack;
+}
+
+.beginning p{
+    font-size: 18px;
+    font-family: FiraSans;
+    margin: 0;
+    padding: 0;
+}
+.ass{
+    position: relative;
+    height: 23vw;
+    margin: 0;
+    padding: 0;
+}
+
+.contours, .discriptions{
+    position: relative;
+    width: 80%;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contours{
+    align-items: center;
+}
+
+.auditorium{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    z-index: 1;
+    top: -10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.people{
+    position: relative;
+    display: column;
+    height: 350px;
+}
+.gamepad{
+    position: relative;
+    display: column;
+    height: 300px;
+}
+
+.peo, .gam{
+    position: relative;
+    display: column;
+    align-items: center;
+    text-align: center;
+}
+.peo{
+    width: 423px;
+}
+.gam{
+    width: 481px;
+}
+
+.heading{
+    position: relative;
+    font-size: 20px;
+    font-family: FiraSans;
+}
+.info{
+    position: relative;
+    font-size: 17px;
+    font-family: AGL
+}
+
+.formats{
+    position: relative;
+    background-color: rgb(58, 56, 56);
+    margin: 0;
+    padding: 0;
+    top: -10px;
+    display:flex;
+    flex-direction: column;
+    
+}
+
+.formats h2{
+    padding-top: 20px;
+    font-family: EuroStyles;
+    font-size: 40px;
+    color:rgb(255, 255, 255);
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.forms{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+}
+
+.in{
+    position: relative;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+
+.clear{
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 150px;
+}
+
+.descriptionBanner{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width:50%;
+    overflow: hidden;
+    padding-left: 10px;
+}
+
+.nameBanner{
+    font-family: EuroStyles;
+    font-size: 20px;
+    color: white;
+    padding: 0px;
+    margin: 0px;
+}
+
+.infoBanner{
+    font-family: AGL;
+    font-size: 18px;
+    color: white;
+    padding: 0px;
+    padding-top: 10px;
+    margin: 0px;
+    text-align: justify;
+}
+
+.screen{
+    height: 250px
+}

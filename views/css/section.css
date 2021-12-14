@@ -1,0 +1,91 @@
+.a{
+    width: 100%;
+    height:100%;
+    position: relative;
+}
+.right_strip, .left_strip{
+    position: relative;
+    width: 100%;
+    height:100%;
+}
+
+/*первая секция*/
+.strip{
+    position: absolute;
+    width: 35%;
+    transform: translate(-100%, 0%);
+    left: 100%;
+    background: #706e6e;
+    height:100%;
+    margin:0;
+    padding: 0;
+    z-index: 0;
+}
+.ferst_selection, .second_selection, .third_selection, .fourth_selection{
+    position: relative;
+    width:100%;
+    height: 100%; 
+    z-index: 1;
+    opacity: 0;
+}
+.animated_button, .animated_button2, .animated_button3, .animated_button4{
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 30%;
+    position: absolute;
+    width: 30%;
+    height: 50%; 
+    z-index: 2;
+    background: #010038;
+    border-radius: 20px;
+    padding: 0%;
+}
+.input1, .input2, .input3, .input4 {
+    position: relative;
+    white-space: normal;
+    -webkit-appearance: none;
+    width: 100%;
+    height:100%;
+    color:white;
+    outline: none;
+    background: transparent;
+    border-radius: 20px;
+    font-family: "SimplerDnm1";
+    font-size: 2.2vw;
+    /*text-overflow: ellipsis;*/
+    word-break: break-all;
+}
+.animated_button:hover, .animated_button2:hover, .animated_button3:hover, .animated_button4:hover{
+    transition: 0.7s;
+    height: 70%;
+}
+.animated_button:not(:hover), .animated_button2:not(:hover), .animated_button3:not(:hover), .animated_button4:not(:hover){
+    transition:0.7s;
+}
+
+.otstup{
+    position: relative;
+    width:100%;
+    height: 7.5vw;/*изменить при готовой странице на проценты*/
+    z-index: 0;
+}
+
+/*вторая секция*/
+
+/*средняя линия*/
+.transition_strip{
+    position: relative;
+    width: 100%;
+    height: 12vw ;
+    background: #706e6e;
+    margin: -5vw 0 0 0;
+    z-index: -1;
+}
+/*левая полоса*/
+.strip1{
+    position: absolute;
+    width: 33%;
+    height: 100%;
+    background: #706e6e;
+}
+

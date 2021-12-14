@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="/css/logotip.css">
+    <link rel="stylesheet" type="text/css" href="/css/gaming-industry/style.css">
+    <link rel="stylesheet" type="text/css" href="/css/shrifts.css">
+    <link rel="stylesheet" href="/css/gaming-industry/article.css">
+    <link rel="stylesheet" href="/css/basement.css">
+    <link rel="stylesheet" href="/css/gaming-industry/style-mobil.css">
+    <link rel="stylesheet" href="/css/gaming-industry/strip-pages.css">
+    <link rel="stylesheet" href="/css/gaming-industry/section-button.css">
+    <link rel="stylesheet" type="text/css" href="/css/layour/menu_mobil.css">
+    <link rel="stylesheet" type="text/css" href="/css/razdel-mobil.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+
+    <meta http-equiv="Last-Modified" content="Sut, 8 Aug 2021 12:31:28 GMT">
+    <meta name="author" content="Kirill Andreev">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="http://stormgames/gaming-industry">
+    <meta name="viewport"  content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Все последние новости игровой индустрии, статьи, прогнозы и материалы"/> 
+    <meta name="robots" content="index, follow" />
+    <meta name="keywords" content="тренды игровой индустрии, игромания, игровая индустрия, геймдев, gamedev, игровые платформы, игровые движки, маркентинг игр, творчество игроков, прогнозы игрового мира, будущее игровой индустрии">
+
+    <link rel="shortcut icon" href="/foto/favicon3.png" type="image/png">
+    <title>Игровая индустрия</title>
+</head>
+<body>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="/js/writeSocketGaming.js"></script>
+    <%- include('head2'); -%>
+    
+   <div class="indent_under_header"></div>
+
+    <%- include('menu_mobil'); -%>
+    <div class="list_news">
+        
+        <div class="column">
+            <div class="news">
+                <h1 class="news_h1">Игровая индустрия</h1>
+            </div>
+            <div class="left_column">
+                <!--*********-->
+                    <% var j = results.length%>
+                    <%for(var i=0 +((Number.parseInt(p))*10); i<j; i++){ %>
+                        <form action="/gaming-industry/<%=results[i]._id%>" method="get">
+                            <div class="record">
+                                <% var id = results[i]._id%>
+                                <input type="submit" id="submit" class="transparent" value=" ">
+                                <div class="name"><h2><%= results[i].title%></h2></div>
+                                <div class="image"><img src="data:image/gif;base64,<%=results[i].picture%>" class="img" alt="Изображение статьи"/></div>
+                                <div class="dscription"><p align="justify"><%= results[i].dscription%></p></div>
+                                <div class="timePublication"><p class="time"><%= results[i].timePublication%></p></div>
+                            </div>
+                        </form>
+                    <%}%>
+            </div>
+            <div class="right_column">
+                <div class="record">
+                    <div class="elem1">
+                            <div class="name1 dscription">
+                                <h2 id="backgroundName" >А так-же...</h2>
+                            </div>
+                    </div>
+                </div>
+                <div class="record">
+                    <div class="elem1">
+                        <form action="/cybersport/" method="get" name="form1">
+                            <input type="submit" class="transparent" value=" ">
+                            <div class="backgroundName"></div> 
+                            <img id="imgElem" class="img" alt="Изображение статьи">
+                            <div class="name1 dscription">
+                                <a id="nameElem" ></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                 <div class="record">
+                    <div class="elem2">
+                        <form action="/cybersport/" method="get" name="form2">
+                            <input type="submit" class="transparent" value=" ">
+                            <div class="backgroundName"></div> 
+                            <img id="imgElem1" class="img" alt="Изображение статьи">
+                            <div class="name1 dscription">
+                                <a id="nameElem1" ></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="record">
+                    <div class="elem3">
+                        <form action="/cybersport/" method="get" name="form3">
+                            <input type="submit" class="transparent" value=" ">
+                            <div class="backgroundName"></div> 
+                            <img id="imgElem2" class="img" alt="Изображение статьи">
+                            <div class="name2 dscription">
+                                <a id="nameElem2" ></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="record">
+                    <div class="elem4">
+                        <form action="/computer-games/" method="get" name="form4">
+                            <input type="submit" class="transparent" value=" ">
+                            <div class="backgroundName"></div> 
+                            <img id="imgElem3" class="img" alt="Изображение статьи">
+                            <div class="name3 dscription">
+                                <a id="nameElem3" ></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="record">
+                    <div class="elem5">
+                        <form action="/computer-games/" method="get" name="form5">
+                            <input type="submit" class="transparent" value=" ">
+                            <div class="backgroundName"></div> 
+                            <img id="imgElem4" class="img" alt="Изображение статьи">
+                            <div class="name4 dscription">
+                                <a id="nameElem4" ></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="record">
+                    <div class="elem6">
+                        <form action="/computer-games/" method="get" name="form6">
+                            <input type="submit" class="transparent" value=" ">
+                            <div class="backgroundName"></div> 
+                            <img id="imgElem5" class="img" alt="Изображение статьи">
+                            <div class="name5 dscription">
+                                <a id="nameElem5" ></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="record">
+                    <div class="elem7">
+                        <form action="/electronic-enginnering/" method="get" name="form7">
+                            <input type="submit" class="transparent" value=" ">
+                            <div class="backgroundName"></div> 
+                            <img id="imgElem6" class="img" alt="Изображение статьи">
+                            <div class="name6 dscription">
+                                <a id="nameElem6" ></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="record">
+                    <div class="elem8">
+                        <form action="/electronic-enginnering/" method="get" name="form8">
+                            <input type="submit" class="transparent" value=" ">
+                            <div class="backgroundName"></div> 
+                            <img id="imgElem7" class="img" alt="Изображение статьи">
+                            <div class="name7 dscription">
+                                <a id="nameElem7" ></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="record">
+                    <div class="elem9">
+                        <form action="/electronic-enginnering/" method="get" name="form9">
+                            <input type="submit" class="transparent" value=" ">
+                            <div class="backgroundName"></div> 
+                            <img id="imgElem8" class="img" alt="Изображение статьи">
+                            <div class="name8 dscription">
+                                <a id="nameElem8" ></a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <%var i = Number.parseInt(p) + 1%>
+    <%var a = "/gaming-industry/?&p=" + i %>
+    <div class="block-page"><span class="span">Продолжить</span><a href="<%=a%>" class="page"></a></div>
+    <%if(p >0){%>
+        <%i = p - 1%>
+        <%var a = "/gaming-industry/?&p=" + i %>
+        <div class="nazad"><span class="span">Назад</span><a href="<%=a%>" class="page"></a></div>
+        
+    <%}%>
+
+    <%- include('basement'); -%>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script src="/js/menu_mobil.js"></script>
+
+</body>
+</html>

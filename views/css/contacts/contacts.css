@@ -1,0 +1,33 @@
+.contacts{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: -10px;
+    background-color: white;
+}
+
+.contacts h2{
+    font-family: EuroStyles;
+    font-size: 30px;
+}
+
+.information{
+    position: relative;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+}
+
+.p{
+    font-size: 20px;
+    font-family: AGL;
+    margin: 0;
+    padding: 3px;
+}
+
+.pp{
+    font-size:22px;
+    font-family: EuroStyles;
+    padding-top: 10px;
+}

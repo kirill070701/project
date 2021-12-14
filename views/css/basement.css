@@ -1,0 +1,143 @@
+.basement{
+    position: relative;
+    width: 100%;
+    background: black;
+    display: flex;
+    padding-bottom: 50px;
+    top: 1.5px
+    
+}
+
+.co{
+    position: relative;
+    padding-top: 25px;
+    padding-left: 3vw;
+    padding-right: 5vw;
+    width: 100%;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+}
+.nameCommunity{
+    position: relative;
+    color: rgb(114, 114, 114);
+    font-size: 30px;
+    font-family: basement;
+}
+
+.co a{
+    position: relative;
+    color:rgb(114, 114, 114);
+    text-decoration: none;
+    font-size: 18px;
+}
+li {
+    position: relative;
+    list-style-type: none; /* Скрываем маркеры, отображаемые по умолчанию */
+    padding-top: 10px;
+    }
+ul{
+    position: relative;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+li::before{
+    color:rgb(114, 114, 114);
+    font-family: 'Montserrat', sans-serif;
+ font-weight: 400;
+ content: "•"; /* Маркер */
+}
+.spans{
+    position: relative;
+    top: -2.5px;
+}
+.info{
+    position: relative;
+    overflow: hidden;
+    color: rgb(114, 114, 114);
+}
+.copyright{
+    position: relative;
+    width: 100%;
+}
+.in{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    /*align-items:center;
+    justify-content: center;*/
+    width:40%;
+}
+.committed{
+    position: relative;
+    margin: 5px;
+    width:50px;
+}
+.columns{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+@media (min-width: 620px) and (max-width: 900px) {
+    .co{
+        position: relative;
+        padding-top: 25px;
+        padding-left: 3vw;
+        padding-right: 5vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .in{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+       /* justify-content: center;*/
+        width:100%;
+    }
+}
+@media screen and (max-width: 619px) {
+    .co{
+        position: relative;
+        padding-top: 25px;
+        padding-left: 3vw;
+        padding-right: 0vw;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .in{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        /*align-items:center;
+        justify-content: center;*/
+        width:100%;
+    }
+
+    .nameCommunity{
+        color: rgb(114, 114, 114);
+        font-size: 20px;
+        font-family: basement;
+        display: flex;
+        flex-direction: row;
+        padding-right: 10px;
+    }
+    svg{
+        height: 20px;
+    }
+
+    .co a{
+        font-size: 10px;
+    }
+    li {
+        padding-top: 5px;
+        }
+    .columns{
+        padding-top: 25px;
+    }
+}

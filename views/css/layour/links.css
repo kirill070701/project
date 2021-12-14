@@ -1,0 +1,9 @@
+.vkpng{
+    width: 30px;
+    box-shadow: 0 0 5px 2px black;
+    border-radius: 10px;
+    margin:10px;
+}
+.vkpng:hover{
+    box-shadow: 0 0 5px 2px white;
+}

@@ -1,0 +1,83 @@
+@media screen and (max-width: 600px) {
+    .animated-words span {
+        position: absolute;
+        opacity: 0;
+        overflow: hidden;
+        color: black;
+        -webkit-animation: animateWord 20s linear infinite 0s;
+        -ms-animation: animateWord 20s linear infinite 0s;
+        animation: animateWord 20s linear infinite 0s;
+    }
+    
+    .animated-words span:nth-child(2) { 
+        -webkit-animation-delay: 0s; 
+        -ms-animation-delay: 0s; 
+        animation-delay: 0s;
+        top: 10px;
+        left: 12%;
+    }
+    .animated-words span:nth-child(3) { 
+        -webkit-animation-delay: 5s; 
+        -ms-animation-delay: 5s; 
+        animation-delay: 5s;
+        top: 10px;
+        left: 12%;
+    }
+    .animated-words span:nth-child(4) { 
+        -webkit-animation-delay: 10s; 
+        -ms-animation-delay: 10s; 
+        animation-delay: 10s; 
+        top: 10px;
+        left: 10%;
+    }
+    .animated-words span:nth-child(5) { 
+        -webkit-animation-delay: 15s; 
+        -ms-animation-delay: 15s; 
+        animation-delay: 15s; 
+        top: 5px;
+        left: 10%;
+    }
+
+    .animated-words {
+        display: inline-block;
+        left: 0%;
+        width: 90%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        position: relative;
+        z-index: 1;
+        font-family: SimplerDnm;
+        font-weight: bold;
+        font-size: calc(1em + 2vw);
+        
+    }
+
+    #rightcol { /* Этот слой накладывается поверх */ 
+        position: fixed; /* Относительное позиционирование */
+        left: 1%; /* Положение от левого края */
+        top: 0%; /* Положение от верхнего края */
+        width: 98%; /* Ширина правой колонки */
+        height: 40px;
+        background: #696969; /* Цвет фона */
+        color: #fff; /* Цвет текста */
+        opacity: 0.8;
+        border-radius: 0% 0% 20px 20px;
+        z-index: 2;
+        margin: 0;
+        padding: 0;
+        
+       }
+       .random{
+        left: 2%;
+        top: 30%;
+        width: 60%;
+        text-transform: none;
+        position: absolute;
+        
+      }
+      
+}
+
+    

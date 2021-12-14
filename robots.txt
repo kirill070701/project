@@ -1,0 +1,11 @@
+User-agent: *
+Host: https://stormgames.ru
+Sitemap: https://stormgames.ru/sitemap.xml
+Disallow: */upload/*
+Disallow: data:image/*
+Clean-param: https://stormgames.ru/gaming-industry
+Clean-param: https://stormgames.ru/cybersport
+Clean-param: https://stormgames.ru/computer-games
+Clean-param: https://stormgames.ru/electronic-enginnering
+Crawl-delay: 2.0
+

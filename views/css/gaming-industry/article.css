@@ -1,0 +1,61 @@
+.record{
+    position: relative;
+    color: white;
+    background:#383737;
+    overflow: hidden;
+    margin: 5px;
+    padding: 1vw
+    
+}
+.img{
+    position: relative;
+    width: 100%;
+    font-size: 0px;
+}
+.name{
+    position: relative;
+    font-size: 1.5vw;
+    font-family: name;
+    margin: 0px;
+    padding: 0px;
+}
+.dscription{
+    position: relative;
+    font-family: discription;
+    font-size: 1.5vw;
+    margin: 0px;
+    padding: 0px;
+}
+.timePublication{
+    position: relative;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+.time{
+    position:relative;
+    float: right;
+    opacity: 0.6;
+}
+.transparent{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 0px solid #fff;
+    opacity: 0;
+    z-index: 1;
+    margin: -1vw;
+}
+.transparent:hover{
+    opacity: 0.3;
+
+}
+h2 {
+    margin: 0.5vw;
+    padding: 0px;
+}
+p{
+    margin:0px;
+    margin-top: 0.8vw;
+    padding: 0px;
+}

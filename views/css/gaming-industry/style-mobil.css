@@ -1,0 +1,47 @@
+@media screen and (max-width: 600px) {
+.news_h1{
+    color: white;
+    z-index: 3;
+    font-family: a_AvanteLt_LightItalic;
+    font-size: 7vw;
+}
+.news{
+
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.right_column{
+    float: right;
+    position: absolute;
+    margin-top: 2vh;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+}
+.left_column{
+    float: left;
+    position: relative;
+    margin-top: 0;
+    width: 96%;
+    overflow: hidden;
+}
+
+.name{
+    position: relative;
+    font-size: 4vw;
+    font-family: name;
+    margin: 0px;
+    padding: 0px;
+}
+.dscription{
+    position: relative;
+    font-family: discription;
+    font-size: 3.5vw;
+    margin: 0px;
+    padding: 0px;
+}
+.time{
+    font-size: 2vw;
+}
+
+}

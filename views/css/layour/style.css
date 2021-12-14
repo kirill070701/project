@@ -1,0 +1,60 @@
+body, html{
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    top: -5px;
+    position: relative;
+}
+html{
+    background-image: url(../../foto/fonn.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-height:100%;
+}
+
+.indent_under_header{
+    position: relative;
+    width: 100%;
+    height: 60px;
+}
+.otstup{
+    position: relative;
+    width: 100%;
+    height: 15vw;
+    background: white;
+}
+.button{
+    position: relative;
+    width:100%;
+    height: 10vh;
+}
+
+.videoyoutube{
+    position: relative;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    margin: 10px;
+}
+
+.videoyoutube iframe, .videoyoutube img{
+    width:90%;
+    height: 400px
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .videoyoutube iframe{
+        position: relative;
+        width:90%;
+        height: 150px;
+        left:-10px
+    }
+}

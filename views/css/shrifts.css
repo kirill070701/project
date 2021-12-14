@@ -1,0 +1,62 @@
+@font-face {
+	font-family: 'SimplerDnm'; 
+	src: url(../shrift/a_SimplerDnm.ttf); 
+}
+
+@font-face {
+	font-family: 'SimplerDnm1'; 
+	src: url(../shrift/a_SimplerDnm1.ttf); 
+}
+
+@font-face {
+	font-family: 'a_AvanteLt_LightItalic'; 
+	src: url(../shrift/a_AvanteLt_LightItalic.ttf); 
+}
+@font-face {
+	font-family: 'name'; 
+	src: url(../shrift/name.ttf); 
+}
+@font-face {
+	font-family: 'discription'; 
+	src: url(../shrift/discription.ttf); 
+}
+
+@font-face {
+	font-family: 'menu'; 
+	src: url(../shrift/menu.ttf); 
+}
+
+@font-face {
+	font-family: 'basement'; 
+	src: url(../shrift/basement.otf); 
+}
+
+@font-face {
+	font-family: 'EchoesSlabBlack'; 
+	src: url(../shrift/EchoesSlabBlack.ttf); 
+}
+
+@font-face {
+	font-family: 'FiraSans'; 
+	src: url(../shrift/Fira\ Sans\ Medium.otf); 
+}
+
+@font-face {
+	font-family: 'AndaleSans'; 
+	src: url(../shrift/Andale\ Sans.ttf); 
+}
+
+@font-face {
+	font-family: 'EuroStyles'; 
+	src: url(../shrift/EuroStyle.ttf); 
+}
+
+@font-face {
+	font-family: 'AGL'; 
+	src: url(../shrift/AGL.ttf); 
+}
+
+@font-face {
+	font-family: 'Sans'; 
+	src: url(../shrift/Sans.ttf); 
+}
